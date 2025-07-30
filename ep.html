@@ -10,15 +10,12 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .box-aporte {
-      background: #ffffff;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
-      margin-bottom: 30px;
+    body {
+      background-color: #f9f7f9;
+      color: #222;
     }
-    .btn-pay {
-      margin: 5px;
+    .section-title {
+      margin-bottom: 30px;
     }
     .video-container {
       position: relative;
@@ -26,12 +23,23 @@
       height: 0;
       overflow: hidden;
       border-radius: 12px;
+      margin-bottom: 40px;
     }
     .video-container iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%;
       height: 100%;
+    }
+    .box-aporte {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+    .btn-pay {
+      margin: 5px;
     }
   </style>
 </head>
@@ -41,7 +49,7 @@
 
   <!-- Header -->
   <header class="section page-header">
-    <div class="rd-navbar-wrap" style="position: absolute">
+    <div class="rd-navbar-wrap">
       <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed">
         <div class="rd-navbar-main-outer">
           <div class="rd-navbar-main">
@@ -69,11 +77,10 @@
   <!-- Presentación -->
   <section class="section section-lg bg-default text-center">
     <div class="container">
-      <h2>Todas las Partes</h2>
-      <p class="lead mt-3">
-        Una campaña para grabar el disco completo de Cintia Allegra. <br>
-        Queremos invitarte a coproducir con nosotres este viaje íntimo y musical. 
-        Cada aporte tiene su reconocimiento y recompensa. ¡Gracias por acompañar!
+      <h2 class="section-title">🎶 Campaña – Todas las Partes</h2>
+      <p class="lead">
+        Estamos grabando el primer EP del disco “Todas las Partes” y queremos invitarte a ser parte.<br>
+        Con tu colaboración, ayudás a que este proyecto sea posible y recibís algo a cambio.
       </p>
     </div>
   </section>
@@ -90,93 +97,93 @@
   <!-- Recompensas -->
   <section class="section section-lg bg-default text-center">
     <div class="container">
-      <h3 class="mb-5">Formas de colaborar</h3>
+      <h3 class="mb-5">💜 Elegí tu forma de colaborar</h3>
       <div class="row row-50">
 
-        <!-- Diamante -->
+        <!-- Nivel 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>💎 Coproductor Diamante</h4>
-            <p class="text-gray-800">$1000 USD</p>
+            <p>$1000 USD</p>
             <ul class="list-marked text-left">
               <li>Canción personalizada</li>
               <li>Sesión individual + clase grupal</li>
-              <li>Crédito destacado en el disco</li>
+              <li>Crédito destacado</li>
             </ul>
-            <a href="LINK-PAYPAL-DIAMANTE" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-DIAMANTE" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
-        <!-- Platino -->
+        <!-- Nivel 2 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>💿 Coproductor Platino</h4>
-            <p class="text-gray-800">$500 USD</p>
+            <p>$500 USD</p>
             <ul class="list-marked text-left">
               <li>Cover grabado por Cintia</li>
               <li>Sesión individual + clase grupal</li>
               <li>Crédito en el disco</li>
             </ul>
-            <a href="LINK-PAYPAL-PLATINO" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-PLATINO" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
-        <!-- Oro -->
+        <!-- Nivel 3 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>🥇 Coproductor Oro</h4>
-            <p class="text-gray-800">$250 USD</p>
+            <p>$250 USD</p>
             <ul class="list-marked text-left">
-              <li>4 sesiones individuales de canto</li>
+              <li>4 sesiones individuales</li>
               <li>Clase grupal</li>
-              <li>Crédito en el disco</li>
+              <li>Créditos</li>
             </ul>
-            <a href="LINK-PAYPAL-ORO" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-ORO" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
-        <!-- Plata -->
+        <!-- Nivel 4 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>🥈 Coproductor Plata</h4>
-            <p class="text-gray-800">$100 USD</p>
+            <p>$100 USD</p>
             <ul class="list-marked text-left">
               <li>1 sesión individual</li>
               <li>Clase grupal</li>
-              <li>Crédito en el disco</li>
+              <li>Créditos</li>
             </ul>
-            <a href="LINK-PAYPAL-PLATA" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-PLATA" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
-        <!-- Bronce -->
+        <!-- Nivel 5 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>🥉 Coproductor Bronce</h4>
-            <p class="text-gray-800">$50 USD</p>
+            <p>$50 USD</p>
             <ul class="list-marked text-left">
-              <li>Acceso a clase grupal</li>
+              <li>Clase grupal</li>
               <li>Crédito en el disco</li>
             </ul>
-            <a href="LINK-PAYPAL-BRONCE" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-BRONCE" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
-        <!-- Básico -->
+        <!-- Nivel 6 -->
         <div class="col-md-6 col-lg-4">
           <div class="box-aporte">
             <h4>🎧 Coproductor</h4>
-            <p class="text-gray-800">$20 USD</p>
+            <p>$20 USD</p>
             <ul class="list-marked text-left">
               <li>Tu nombre en los créditos del disco</li>
             </ul>
-            <a href="LINK-PAYPAL-BASICO" class="button button-primary btn-pay">PayPal</a>
-            <a href="LINK-MP-BASICO" class="button button-outline btn-pay">MercadoPago</a>
+            <a class="button button-primary btn-pay" href="#">PayPal</a>
+            <a class="button button-outline btn-pay" href="#">MercadoPago</a>
           </div>
         </div>
 
@@ -192,6 +199,7 @@
   </footer>
 
 </div>
+
 <script src="js/core.min.js"></script>
 <script src="js/script.js"></script>
 </body>
