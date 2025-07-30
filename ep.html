@@ -1,210 +1,198 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="es">
-<style>
-  body {
-    background-color: #f9f7f9 !important;
-    color: #222 !important;
-  }
+<head>
+  <title>Campaña – Todas las Partes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .box-aporte {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
+    }
+    .btn-pay {
+      margin: 5px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
 
-  section.bg-default {
-    background-color: #f9f7f9 !important;
-  }
+<body>
+<div class="page">
 
-  .box-pricing {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.08);
-    margin-bottom: 20px;
-  }
-
-  .button {
-    margin: 5px;
-  }
-
-  h2, h3, h4, p, li {
-    color: #222 !important;
-  }
-</style>
-
-  <head>
-    <title>Campaña – Todas las Partes</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-
-  <body>
-    <div class="page">
-
-      <!-- Encabezado común -->
-      <header class="section page-header">
-        <div class="rd-navbar-wrap" style="position: absolute">
-          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed">
-            <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <div class="rd-navbar-panel">
-                  <div class="rd-navbar-brand">
-                    <a class="brand" href="index.html"><img src="images/logo-default-296x52.png" alt="Allegra" width="148"/></a>
-                  </div>
-                </div>
-                <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Campaña</a></li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
-                    </ul>
-                  </div>
-                </div>
+  <!-- Header -->
+  <header class="section page-header">
+    <div class="rd-navbar-wrap" style="position: absolute">
+      <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed">
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <div class="rd-navbar-panel">
+              <div class="rd-navbar-brand">
+                <a class="brand" href="index.html">
+                  <img src="images/logo-default-296x52.png" alt="Allegra" width="148"/>
+                </a>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-
-      <!-- Presentación -->
-      <section class="section section-lg bg-default text-center">
-        <div class="container">
-          <h2>🌿 Todas las Partes – Campaña de Financiamiento</h2>
-          <p class="text-gray-700 mt-3">
-            Este disco nace de muchos años de búsqueda, creación y transformación. Vamos a grabarlo en cuatro etapas, y queremos invitarte a ser parte desde el principio. 
-            Con tu aporte estás coproduciendo no solo un EP, sino una historia. Abajo podés ver el video y elegir cómo acompañar.
-          </p>
-        </div>
-      </section>
-
-      <!-- Video -->
-      <section class="section bg-default text-center">
-        <div class="container">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+            <div class="rd-navbar-main-element">
+              <div class="rd-navbar-nav-wrap">
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Inicio</a></li>
+                  <li class="rd-nav-item active"><a class="rd-nav-link" href="campania.html">Campaña</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- Escala de aportes -->
-      <section class="section section-lg bg-default text-center">
-        <div class="container">
-          <h3 class="mb-4">🎁 Elegí tu forma de colaborar</h3>
-          <div class="row row-50">
-            <!-- Básico -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>🎧 Coproductor</h4>
-                <p class="text-gray-800">$20 USD</p>
-                <ul class="list-marked">
-                  <li>Tu nombre en los créditos</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-BASICO">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-BASICO">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-			
-			            <!-- Bronce -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>🥉 Coproductor Bronce</h4>
-                <p class="text-gray-800">$50 USD</p>
-                <ul class="list-marked">
-                  <li>Clase grupal de canto</li>
-                  <li>Crédito en el disco</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-BRONCE">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-BRONCE">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-
- <!-- Plata -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>🥈 Coproductor Plata</h4>
-                <p class="text-gray-800">$100 USD</p>
-                <ul class="list-marked">
-                  <li>Sesión individual de canto</li>
-                  <li>Clase grupal + créditos</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-PLATA">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-PLATA">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-
-
-
- <!-- Coproductor Oro -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>🥇 Coproductor Oro</h4>
-                <p class="text-gray-800">$250 USD</p>
-                <ul class="list-marked">
-                  <li>Pack de 4 sesiones individuales</li>
-                  <li>Clase grupal + créditos</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-ORO">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-ORO">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Coproductor Platino -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>💿 Coproductor Platino</h4>
-                <p class="text-gray-800">$500 USD</p>
-                <ul class="list-marked">
-                  <li>Cover grabado por Cintia</li>
-                  <li>Sesión individual + clase grupal</li>
-                  <li>Crédito en el EP</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-PLATINO">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-PLATINO">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-            <!-- Coproductor Diamante -->
-            <div class="col-md-6 col-lg-4">
-              <div class="box-pricing">
-                <h4>💎 Coproductor Diamante</h4>
-                <p class="text-gray-800">$1000 USD</p>
-                <ul class="list-marked">
-                  <li>Canción personalizada grabada por Cintia</li>
-                  <li>Sesión individual + clase grupal</li>
-                  <li>Crédito destacado</li>
-                </ul>
-                <div class="mt-3">
-                  <a class="button button-primary" href="LINK-PAYPAL-DIAMANTE">PayPal</a>
-                  <a class="button button-outline button-sm" href="LINK-MERCADOPAGO-DIAMANTE">MercadoPago</a>
-                </div>
-              </div>
-            </div>
-           
-           
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="section footer-classic bg-default">
-        <div class="container">
-          <p class="rights"><span>&copy; </span><span class="copyright-year"></span> <span>Allegra</span>. Todos los derechos reservados.</p>
-        </div>
-      </footer>
-
+      </nav>
     </div>
+  </header>
 
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  <!-- Presentación -->
+  <section class="section section-lg bg-default text-center">
+    <div class="container">
+      <h2>Todas las Partes</h2>
+      <p class="lead mt-3">
+        Una campaña para grabar el disco completo de Cintia Allegra. <br>
+        Queremos invitarte a coproducir con nosotres este viaje íntimo y musical. 
+        Cada aporte tiene su reconocimiento y recompensa. ¡Gracias por acompañar!
+      </p>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section bg-default text-center">
+    <div class="container">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recompensas -->
+  <section class="section section-lg bg-default text-center">
+    <div class="container">
+      <h3 class="mb-5">Formas de colaborar</h3>
+      <div class="row row-50">
+
+        <!-- Diamante -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>💎 Coproductor Diamante</h4>
+            <p class="text-gray-800">$1000 USD</p>
+            <ul class="list-marked text-left">
+              <li>Canción personalizada</li>
+              <li>Sesión individual + clase grupal</li>
+              <li>Crédito destacado en el disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-DIAMANTE" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-DIAMANTE" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+        <!-- Platino -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>💿 Coproductor Platino</h4>
+            <p class="text-gray-800">$500 USD</p>
+            <ul class="list-marked text-left">
+              <li>Cover grabado por Cintia</li>
+              <li>Sesión individual + clase grupal</li>
+              <li>Crédito en el disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-PLATINO" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-PLATINO" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+        <!-- Oro -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>🥇 Coproductor Oro</h4>
+            <p class="text-gray-800">$250 USD</p>
+            <ul class="list-marked text-left">
+              <li>4 sesiones individuales de canto</li>
+              <li>Clase grupal</li>
+              <li>Crédito en el disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-ORO" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-ORO" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+        <!-- Plata -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>🥈 Coproductor Plata</h4>
+            <p class="text-gray-800">$100 USD</p>
+            <ul class="list-marked text-left">
+              <li>1 sesión individual</li>
+              <li>Clase grupal</li>
+              <li>Crédito en el disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-PLATA" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-PLATA" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+        <!-- Bronce -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>🥉 Coproductor Bronce</h4>
+            <p class="text-gray-800">$50 USD</p>
+            <ul class="list-marked text-left">
+              <li>Acceso a clase grupal</li>
+              <li>Crédito en el disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-BRONCE" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-BRONCE" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+        <!-- Básico -->
+        <div class="col-md-6 col-lg-4">
+          <div class="box-aporte">
+            <h4>🎧 Coproductor</h4>
+            <p class="text-gray-800">$20 USD</p>
+            <ul class="list-marked text-left">
+              <li>Tu nombre en los créditos del disco</li>
+            </ul>
+            <a href="LINK-PAYPAL-BASICO" class="button button-primary btn-pay">PayPal</a>
+            <a href="LINK-MP-BASICO" class="button button-outline btn-pay">MercadoPago</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section footer-classic bg-default">
+    <div class="container">
+      <p class="rights">&copy; <span class="copyright-year"></span> Allegra – Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+</div>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+</body>
 </html>
