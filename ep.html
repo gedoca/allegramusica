@@ -146,23 +146,30 @@
       </p>
     </div>
   </section>
+  
 <section class="section bg-default text-center">
   <div class="container">
     <h3 class="mb-4">🎯 Progreso de la campaña</h3>
 
-    <!-- Barra -->
-    <div class="progress" style="height: 30px; background-color: #eee; border-radius: 30px; overflow: hidden;">
-      <div class="progress-bar" role="progressbar" style="width: 33%; background-color: #8a3bbf;" aria-valuenow="5000" aria-valuemin="0" aria-valuemax="15000">
-        $5.000 / $15.000
-      </div>
-    </div>
+    <div style="position: relative; height: 60px; margin-bottom: 40px;">
 
-    <!-- Hitos -->
-    <div class="row justify-content-between mt-3 px-3 text-start small">
-      <div class="col-auto text-muted">0</div>
-      <div class="col-auto text-muted">🎙️ $5.000 – Primer EP grabado</div>
-      <div class="col-auto text-muted">🎛️ $7.500 – Mitad del disco</div>
-      <div class="col-auto text-muted">💿 $15.000 – Disco completo</div>
+      <!-- Barra de progreso -->
+      <div class="progress" style="height: 30px; background-color: #eee; border-radius: 30px; overflow: hidden;">
+        <div class="progress-bar" role="progressbar" 
+             style="width: 0%; background-color: #8a3bbf;" 
+             aria-valuenow="0" aria-valuemin="0" aria-valuemax="5000">
+          $0 / $5000
+        </div>
+      </div>
+
+      <!-- Etiquetas debajo -->
+      <div style="position: absolute; top: 35px; left: 0; font-size: 0.85rem; color: #666;">
+        0 – Empezamos la campaña
+      </div>
+      <div style="position: absolute; top: 35px; right: 0; font-size: 0.85rem; color: #666;">
+        5000 – Financiamos el disco
+      </div>
+
     </div>
   </div>
 </section>
