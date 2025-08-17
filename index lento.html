@@ -1,51 +1,20 @@
-<head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
-  <!-- Fuentes: quedate con UNA (Raleway). Evitamos 5 familias. -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Elegí 400/600 y display=swap -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS crítico mínimo para evitar CLS y acelerar FCP (opcional, breve): -->
-  <style>
-    :root{--fg:#222;--bg:#fff}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:var(--bg);color:var(--fg);font-family:Raleway,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.5}
-    img{max-width:100%;height:auto;display:block}
-    .rd-navbar-brand img{height:auto}
-    .swiper-container{background:#000} /* evita parpadeo */
-	.preloader{display:none!important}
-
-  </style>
-
-  <!-- CSS principal diferido (no bloquea render) -->
-  <link rel="preload" href="css/bootstrap.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="css/bootstrap.css">
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans:400,600,700%7CSource+Code+Pro:300,400,500,600,700,900%7CNothing+You+Could+Do%7CPoppins:400,500">
+   	<link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-  </noscript>
-
-  <!-- Preload del LCP (primer slide de Swiper) -->
-<link rel="preload" as="image"
-  href="images/home1-00-1280.jpg"
-  imagesrcset="
-    images/home1-00-800.jpg 800w,
-    images/home1-00-1280.jpg 1280w,
-    images/home1-00-1920x950.jpg 1920w"
-  imagesizes="(max-width: 800px) 100vw, 1280px">
-  <!-- Preconnect para iframes si los usás (Drive/YouTube) -->
-  <link rel="preconnect" href="https://drive.google.com">
-  <link rel="preconnect" href="https://www.youtube.com">
-  
-</head>
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
@@ -103,12 +72,7 @@
       <section class="section swiper-container swiper-slider swiper-slider-1" data-loop="true" data-autoplay="8000" data-simulate-touch="false">
         <div class="swiper-wrapper text-center">
 		
-		  <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-00-1920x950.jpg"
-     data-bg-800="images/home1-00-800.jpg"
-     data-bg-1280="images/home1-00-1280.jpg"
-     data-bg-1920="images/home1-00-1920x950.jpg">
-	 
+		          <div class="swiper-slide context-dark" data-slide-bg="images/home1-00-1920x950.jpg">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row justify-content-lg-center">
@@ -122,12 +86,7 @@
             </div>
           </div>
 		  
-          <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-02-1920x950.jpg"
-     data-bg-800="images/home1-02-800.jpg"
-     data-bg-1280="images/home1-02-1280.jpg"
-     data-bg-1920="images/home1-02-1920x950.jpg">
-	 
+          <div class="swiper-slide context-dark" data-slide-bg="images/home1-02-1920x950.jpg">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row justify-content-lg-center">
@@ -141,12 +100,7 @@
             </div>
           </div>
 
-          <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-01-1920x950.jpg"
-     data-bg-800="images/home1-01-800.jpg"
-     data-bg-1280="images/home1-01-1280.jpg"
-     data-bg-1920="images/home1-01-1920x950.jpg">
-	 
+          <div class="swiper-slide context-dark" data-slide-bg="images/home1-01-1920x950.jpg">
             <div class="swiper-slide-caption section-md">
               <div class="container">
                 <div class="row justify-content-lg-center">
@@ -164,7 +118,21 @@
         <div class="swiper-pagination"></div>
       </section>
 
-
+      <section style="display:none;" class="parallax-container section-lg text-center" data-parallax-img="images/bg-home1-01-1920x1000.jpg">
+        <div class="parallax-content">
+          <div class="container">
+            <h6 class="text-gray-600">Trident Festival in Duchonka, slovakia - June 26, 2019</h6>
+            <h2>featured event</h2>
+            <div class="row justify-content-center">
+              <div class="col-lg-11">
+                <div class="post-event">
+                  <div class="countdown" data-type="until" data-time="17 Aug 2019 00:00"></div><img src="images/events-02-571x313.jpg" alt="" width="571" height="156"/><a class="button button-primary button-lg" href="#">buy tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -206,14 +174,18 @@
   </div>
 </section>
   <!-- Video -->
-<section class="section bg-default text-center">
-  <div class="container">
-    <div class="video" data-src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview" style="position:relative;max-width:886px;margin:0 auto">
-      <img src="images/video-thumb.jpg" alt="Presentación de la campaña" width="886" height="668" loading="lazy">
-      <button aria-label="Reproducir video" style="position:absolute;inset:0;margin:auto;width:72px;height:72px;border:0;border-radius:50%;background:#fff9;backdrop-filter:blur(4px);font-size:28px;cursor:pointer">▶</button>
+  <section class="section bg-default text-center" >
+    <div class="container">
+      <div class="video-container">
+		<iframe src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview" 
+        width="886" height="668" 
+        allow="autoplay" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- SObre el Disco -->
@@ -426,37 +398,22 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tabs-2-1">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-<div class="video" data-src="https://www.youtube.com/embed/X4w4qAeF09Q?autoplay=1">
-  <img src="images/video-01-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-</div>                </div>
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/X4w4qAeF09Q" allowfullscreen=""></iframe>
+                </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-2">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-				
-				<div class="video" data-src="https://www.youtube.com/embed/Tp5QOr2cTDQ?autoplay=1">
-  <img src="images/video-02-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-</div>
-
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/Tp5QOr2cTDQ" allowfullscreen=""></iframe>
                 </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-3">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-								<div class="video" data-src="https://www.youtube.com/embed/rLmifbry6qM?autoplay=1">
-  <img src="images/video-03-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-  </div>
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/rLmifbry6qM" allowfullscreen=""></iframe>
                 </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-4">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-				
-												<div class="video" data-src="https://www.youtube.com/embed/-nJOYdTKIOE?autoplay=1">
-  <img src="images/video-04-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-  </div>
-				
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/-nJOYdTKIOE" allowfullscreen=""></iframe>
                 </div>
               </div>
             </div>
@@ -465,25 +422,25 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
               <ul class="nav nav-tabs">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-2-1" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-01-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-01-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Pozo - Lisandro Aristimuño (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-2" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-02-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-02-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Al lado del camino - Fito Paez (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-3" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-03-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-03-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Alfonsina y el mar - Mercedes Sosa (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-4" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-04-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-04-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">El tiempo está después - Fernando Cabrera (cover)</h6>
                     </div></a></li>
@@ -496,19 +453,19 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
       <section class="section" data-lightgallery="group">
         <div class="row no-gutters">
           <div class="col-lg-3 col-sm-6">
-            <div class="thumbnail-classic"><img src="images/home1-05-480x350.jpg" alt="" width="480" height="175" loading="lazy"/>
+            <div class="thumbnail-classic"><img src="images/home1-05-480x350.jpg" alt="" width="480" height="175"/>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="thumbnail-classic"><img src="images/home1-06-480x350.jpg" alt="" width="480" height="175" loading="lazy"/>
+            <div class="thumbnail-classic"><img src="images/home1-06-480x350.jpg" alt="" width="480" height="175"/>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="thumbnail-classic"><img src="images/home1-07-480x350.jpg" alt="" width="480" height="175" loading="lazy"/>
+            <div class="thumbnail-classic"><img src="images/home1-07-480x350.jpg" alt="" width="480" height="175"/>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="thumbnail-classic"><img src="images/home1-08-480x350.jpg" alt="" width="480" height="175" loading="lazy"/>
+            <div class="thumbnail-classic"><img src="images/home1-08-480x350.jpg" alt="" width="480" height="175"/>
             </div>
           </div>
         </div>
@@ -521,7 +478,7 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
           <div class="row row-125">
             <div class="col-md-6 col-lg-4">
               <article class="post-classic">
-                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-01-346x260.jpg" alt="" width="346" height="130" loading="lazy"/></a></figure>
+                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-01-346x260.jpg" alt="" width="346" height="130"/></a></figure>
                 <div class="post-classic-content">
                   <time class="post-classic-time" datetime="2019-09-19">PROGRAMA DE EXPLORACIÓN</time>
                   <h5 class="post-classic-title"><a href="#">Soltar el Aire</br> La Voz Presente</a></h5><a class="post-classic-link" href="/programa.html">saber más</a>
@@ -530,7 +487,7 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
             </div>
             <div class="col-md-6 col-lg-4">
               <article class="post-classic">
-                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-02-346x260.jpg" alt="" width="346" height="130" loading="lazy"/></a></figure>
+                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-02-346x260.jpg" alt="" width="346" height="130"/></a></figure>
                 <div class="post-classic-content">
                   <time class="post-classic-time" datetime="2019-09-19">CLASES</time>
                   <h5 class="post-classic-title"><a href="#">Sesiones individuales y grupales de exploración vocal</a></h5><a class="post-classic-link" href="/sesiones.html">reservar</a>
@@ -539,11 +496,11 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
             </div>
             <div class="col-md-6 col-lg-4">
               <article class="post-classic">
-                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-03-346x260.jpg" alt="" width="346" height="130" loading="lazy"/></a></figure>
+                <figure class="post-classic-figure"><a href="#"><img src="images/post-classic-03-346x260.jpg" alt="" width="346" height="130"/></a></figure>
                 <div class="post-classic-content">
                   <time class="post-classic-time" datetime="2019-09-19">NUEVO DISCO</time>
-<h5 class="post-classic-title"><a href="#">Me encuentro produciendo mi nuevo disco.</a></h5>
-<a class="post-classic-link" href="https://docs.google.com/forms/d/e/1FAIpQLSejVQc7snxR16e14sT1i6SLHSnPYt8sxEQT8Pdr7UCH-dNUyA/viewform?usp=header">Colaborar</a>
+                  <h5 class="post-classic-title"><a href="#">Me encuentro produciendo mi nuevo disco.</a></h5><a class="post-classic-link" href="https://docs.google.com/forms/d/e/1FAIpQLSejVQc7snxR16e14sT1i6SLHSnPYt8sxEQT8Pdr7UCH-dNUyA/viewform?usp=header">Colaborar</a>
+">apoyar</a>
                 </div>
               </article>
             </div>
@@ -551,7 +508,120 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
         </div>
       </section>
 
-
+      <section style="display:none;" class="parallax-container parallax-overlay-01" data-parallax-img="images/bg-footer-1920x1285.jpg">
+        <div class="parallax-content">
+          <div class="section-sm prefooter-custom">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-lg-6">
+                  <div class="google-map-container google-map-container-custom-1" data-center="new york, USA" data-zoom="5" data-styles="[{&quot;featureType&quot;:&quot;administrative&quot;,&quot;elementType&quot;:&quot;labels.text.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#444444&quot;}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#f2f2f2&quot;}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;road&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:45}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;elementType&quot;:&quot;labels.icon&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;elementType&quot;:&quot;all&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#46bcec&quot;},{&quot;visibility&quot;:&quot;on&quot;}]}]">
+                    <div class="google-map"></div>
+                    <ul class="google-map-markers">
+                      <li data-location="Bayfront Park, Miami, USA" data-description="ULTRA MUSIC FESTIVAL" data-icon="images/gmap_marker-1.png" data-icon-active="images/gmap_marker-1.png"></li>
+                      <li data-location="Brooklyn, New York, United States" data-description="CLUB CULTURAL" data-icon="images/gmap_marker-2.png" data-icon-active="images/gmap_marker-2.png"></li>
+                      <li data-location="Hamilton Township Pennsylvania, United States" data-description="A summer story" data-icon="images/gmap_marker-3.png" data-icon-active="images/gmap_marker-3.png"></li>
+                      <li data-location="Montgomery Veterans Park / Arboretum, Harlingen Road, United States" data-description="EXPO CENTER TRENciN" data-icon="images/gmap_marker-4.png" data-icon-active="images/gmap_marker-4.png"></li>
+                      <li data-location="West Milford New Jersey, USA" data-description="WKND FESTIVAL BALTICS" data-icon="images/gmap_marker-5.png" data-icon-active="images/gmap_marker-5.png"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <h3>tour dates</h3>
+                  <div class="box-event-wrap scroll-wrap">
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">25</h3>
+                              <p class="box-event-date-month">feb</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">ULTRA MUSIC FESTIVAL</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Miami</li>
+                                <li>USA</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">12</h3>
+                              <p class="box-event-date-month">mar</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">edc orlando</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Tinkler Field</li>
+                                <li>Orlando</li>
+                                <li>USA</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">24</h3>
+                              <p class="box-event-date-month">apr</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">Electric zoo</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Randall’s Island Park</li>
+                                <li>New York</li>
+                                <li>USA</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">17</h3>
+                              <p class="box-event-date-month">jul</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">Nocturnal Wonderland</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Glen Helen National Park</li>
+                                <li>USA</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">18</h3>
+                              <p class="box-event-date-month">aug</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">Coachella</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Empire Polo Club</li>
+                                <li>Indio</li>
+                                <li>USA</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                          <div class="box-event novi-bg">
+                            <div class="box-event-date-wrap">
+                              <h3 class="box-event-date-day">12</h3>
+                              <p class="box-event-date-month">OCT</p>
+                            </div>
+                            <div class="box-event-text-wrap">
+                              <h5 class="box-event-text-title"><a href="#">Let It Roll</a></h5>
+                              <ul class="box-event-text-location">
+                                <li>Milovice</li>
+                                <li>Czech Republic</li>
+                              </ul>
+                            </div>
+                            <div class="box-event-button-wrap"><a class="button button-outline button-sm" href="#">buy tickets</a></div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="section footer-classic bg-default">
         <div class="container">
           <div class="row row-15">
@@ -568,53 +638,8 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-<script src="js/core.min.js" defer></script>
-<script src="js/script.js" defer></script>
-	<script>
-  // Click-to-load iframes (Drive/YouTube)
-  document.querySelectorAll('.video').forEach(box=>{
-    const btn = box.querySelector('button');
-    btn?.addEventListener('click', ()=>{
-      const src = box.dataset.src;
-      const w = box.querySelector('img')?.getAttribute('width') || 560;
-      const h = box.querySelector('img')?.getAttribute('height') || 315;
-      box.innerHTML = `<iframe width="${w}" height="${h}" src="${src}" loading="lazy" allow="autoplay" frameborder="0" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
-    });
-  });
-</script>
-<script defer>
-(function(){
-  function pickUrl(slide){
-    // Ancho efectivo considerando DPR (cap a 1920)
-    var effective = Math.min(window.innerWidth * (window.devicePixelRatio || 1), 1920);
-    var url = slide.dataset.bg800 || slide.dataset.slideBg;
-
-    if (effective > 900)  url = slide.dataset.bg1280 || url;
-    if (effective > 1400) url = slide.dataset.bg1920 || url;
-
-    // Aplica el fondo y actualiza el atributo que usa el template
-    slide.style.backgroundImage = "url('" + url + "')";
-    slide.setAttribute('data-slide-bg', url);
-  }
-
-  function applyAll(){
-    document.querySelectorAll('.swiper-slide[data-slide-bg]').forEach(pickUrl);
-  }
-
-  // Corre al cargar y en resize (con debounce)
-  var to;
-  window.addEventListener('resize', function(){
-    clearTimeout(to);
-    to = setTimeout(applyAll, 120);
-  });
-
-  // Si el DOM ya está, aplicar; si no, esperar
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyAll);
-  } else {
-    applyAll();
-  }
-})();
-</script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--coded by houdini-->
   </body>
 </html>
