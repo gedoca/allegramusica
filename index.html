@@ -47,7 +47,6 @@
   
 </head>
   <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
       <div class="preloader-body">
         <div class="cssload-container">
@@ -206,14 +205,18 @@
   </div>
 </section>
   <!-- Video -->
-<section class="section bg-default text-center">
-  <div class="container">
-    <div class="video" data-src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview" style="position:relative;max-width:886px;margin:0 auto">
-      <img src="images/video-thumb.jpg" alt="Presentación de la campaña" width="886" height="668" loading="lazy">
-      <button aria-label="Reproducir video" style="position:absolute;inset:0;margin:auto;width:72px;height:72px;border:0;border-radius:50%;background:#fff9;backdrop-filter:blur(4px);font-size:28px;cursor:pointer">▶</button>
+  <section class="section bg-default text-center" >
+    <div class="container">
+      <div class="video-container">
+		<iframe src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview" 
+        width="886" height="668" 
+        allow="autoplay" 
+        frameborder="0" 
+        allowfullscreen>
+</iframe>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- SObre el Disco -->
@@ -426,37 +429,22 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
             <div class="tab-content">
               <div class="tab-pane fade show active" id="tabs-2-1">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-<div class="video" data-src="https://www.youtube.com/embed/X4w4qAeF09Q?autoplay=1">
-  <img src="images/video-01-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-</div>                </div>
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/X4w4qAeF09Q" allowfullscreen=""></iframe>
+                </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-2">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-				
-				<div class="video" data-src="https://www.youtube.com/embed/Tp5QOr2cTDQ?autoplay=1">
-  <img src="images/video-02-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-</div>
-
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/Tp5QOr2cTDQ" allowfullscreen=""></iframe>
                 </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-3">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-								<div class="video" data-src="https://www.youtube.com/embed/rLmifbry6qM?autoplay=1">
-  <img src="images/video-03-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-  </div>
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/rLmifbry6qM" allowfullscreen=""></iframe>
                 </div>
               </div>
               <div class="tab-pane fade" id="tabs-2-4">
                 <div class="entry-video embed-responsive embed-responsive-16by9">
-				
-												<div class="video" data-src="https://www.youtube.com/embed/-nJOYdTKIOE?autoplay=1">
-  <img src="images/video-04-140x81.jpg" alt="Pozo - cover" width="886" height="498" loading="lazy">
-  <button aria-label="Reproducir">▶</button>
-  </div>
-				
+                  <iframe width="886" height="668" src="//www.youtube.com/embed/-nJOYdTKIOE" allowfullscreen=""></iframe>
                 </div>
               </div>
             </div>
@@ -465,25 +453,25 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
               <ul class="nav nav-tabs">
                 <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-2-1" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-01-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-01-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Pozo - Lisandro Aristimuño (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-2" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-02-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-02-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Al lado del camino - Fito Paez (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-3" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-03-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-03-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">Alfonsina y el mar - Mercedes Sosa (cover)</h6>
                     </div></a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-2-4" data-toggle="tab">
                     <div class="nav-video">
-                      <figure class="nav-video-figure"><img src="images/video-04-140x81.jpg" alt="" width="140" height="40" loading="lazy"/>
+                      <figure class="nav-video-figure"><img src="images/video-04-140x81.jpg" alt="" width="140" height="40"/>
                       </figure>
                       <h6 class="nav-video-title">El tiempo está después - Fernando Cabrera (cover)</h6>
                     </div></a></li>
