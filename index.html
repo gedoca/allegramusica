@@ -117,6 +117,10 @@
 </style>
 
   <!-- Preload del LCP (primer slide de Swiper) -->
+  <link rel="preload" as="image"
+  href="images/home1-00-800.jpg">
+  
+  
 <link rel="preload" as="image"
   href="images/home1-00-1280.jpg"
   imagesrcset="
@@ -186,7 +190,7 @@
         <div class="swiper-wrapper text-center">
 		
 		  <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-00-1920x950.jpg"
+     data-slide-bg="images/home1-00-800.jpg"
      data-bg-800="images/home1-00-800.jpg"
      data-bg-1280="images/home1-00-1280.jpg"
      data-bg-1920="images/home1-00-1920x950.jpg">
@@ -205,7 +209,7 @@
           </div>
 		  
           <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-02-1920x950.jpg"
+     data-slide-bg="images/home1-02-800.jpg"
      data-bg-800="images/home1-02-800.jpg"
      data-bg-1280="images/home1-02-1280.jpg"
      data-bg-1920="images/home1-02-1920x950.jpg">
@@ -224,7 +228,7 @@
           </div>
 
           <div class="swiper-slide context-dark"
-     data-slide-bg="images/home1-01-1920x950.jpg"
+     data-slide-bg="images/home1-01-800.jpg"
      data-bg-800="images/home1-01-800.jpg"
      data-bg-1280="images/home1-01-1280.jpg"
      data-bg-1920="images/home1-01-1920x950.jpg">
@@ -640,6 +644,22 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
       </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
+	
+	<script>
+(function(){
+  function initialPick(){
+    var eff = Math.min(window.innerWidth * (window.devicePixelRatio || 1), 1920);
+    document.querySelectorAll('.swiper-slide[data-slide-bg]').forEach(function(slide){
+      var url = slide.dataset.bg800 || slide.dataset.slideBg;
+      if (eff > 900)  url = slide.dataset.bg1280 || url;
+      if (eff > 1400) url = slide.dataset.bg1920 || url;
+      slide.setAttribute('data-slide-bg', url);
+      slide.style.backgroundImage = "url('" + url + "')";
+    });
+  }
+  initialPick();
+})();
+</script>
 <script src="js/core.min.js" defer></script>
 <script src="js/script.js" defer></script>
 
