@@ -22,15 +22,9 @@
 
   </style>
 
-  <!-- CSS principal diferido (no bloquea render) -->
-  <link rel="preload" href="css/bootstrap.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/fonts.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-  </noscript>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
 
   <!-- Preload del LCP (primer slide de Swiper) -->
 <link rel="preload" as="image"
@@ -206,12 +200,14 @@
   <!-- Video -->
   <section class="section bg-default text-center" >
     <div class="container">
-      <div class="video-container">
-		<iframe src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview" 
-        width="886" height="668" 
-        allow="autoplay" 
-        frameborder="0" 
-        allowfullscreen>
+<iframe
+  src="https://drive.google.com/file/d/1iT3a6UkCVQ19tdb71g83gpdXQF4dwWgj/preview"
+  width="886" height="668"
+  allow="autoplay"
+  frameborder="0"
+  allowfullscreen
+  loading="lazy"
+  referrerpolicy="strict-origin-when-cross-origin">
 </iframe>
       </div>
     </div>
@@ -557,50 +553,26 @@ La primera parte, Fractura, se materializará en un EP de tres canciones: Una Ma
     <div class="snackbars" id="form-output-global"></div>
 <script src="js/core.min.js" defer></script>
 <script src="js/script.js" defer></script>
-	<script>
-  // Click-to-load iframes (Drive/YouTube)
-  document.querySelectorAll('.video').forEach(box=>{
-    const btn = box.querySelector('button');
-    btn?.addEventListener('click', ()=>{
-      const src = box.dataset.src;
-      const w = box.querySelector('img')?.getAttribute('width') || 560;
-      const h = box.querySelector('img')?.getAttribute('height') || 315;
-      box.innerHTML = `<iframe width="${w}" height="${h}" src="${src}" loading="lazy" allow="autoplay" frameborder="0" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
-    });
-  });
-</script>
+
 <script defer>
 (function(){
   function pickUrl(slide){
-    // Ancho efectivo considerando DPR (cap a 1920)
     var effective = Math.min(window.innerWidth * (window.devicePixelRatio || 1), 1920);
     var url = slide.dataset.bg800 || slide.dataset.slideBg;
-
     if (effective > 900)  url = slide.dataset.bg1280 || url;
     if (effective > 1400) url = slide.dataset.bg1920 || url;
 
-    // Aplica el fondo y actualiza el atributo que usa el template
+    // Si el template ya puso background, lo reemplazamos suavemente
     slide.style.backgroundImage = "url('" + url + "')";
     slide.setAttribute('data-slide-bg', url);
   }
-
   function applyAll(){
     document.querySelectorAll('.swiper-slide[data-slide-bg]').forEach(pickUrl);
   }
-
-  // Corre al cargar y en resize (con debounce)
-  var to;
-  window.addEventListener('resize', function(){
-    clearTimeout(to);
-    to = setTimeout(applyAll, 120);
-  });
-
-  // Si el DOM ya está, aplicar; si no, esperar
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyAll);
-  } else {
-    applyAll();
-  }
+  // ✅ Esperar a que todo (incluido Swiper) esté listo
+  window.addEventListener('load', applyAll);
+  // Reaplicar en resize con debounce
+  var t; window.addEventListener('resize', ()=>{ clearTimeout(t); t=setTimeout(applyAll,120); });
 })();
 </script>
   </body>
